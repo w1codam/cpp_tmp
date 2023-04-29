@@ -18,7 +18,7 @@ MutantStack<T>::MutantStack(const MutantStack& c):
 template<typename T>
 MutantStack<T>& MutantStack<T>::operator = (const MutantStack& c)
 {
-	(void)c;
+	this->c = c.c;
 	return (*this);
 }
 
