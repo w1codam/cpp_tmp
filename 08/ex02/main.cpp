@@ -4,6 +4,7 @@
 
 int main(void)
 {
+	std::cout << "== mstack ==" << std::endl;
 	{
 		MutantStack<int> mstack;
 		mstack.push(5);
@@ -26,7 +27,7 @@ int main(void)
 		}
 		std::stack<int> s(mstack);
 	}
-	std::cout << "======" << std::endl;
+	std::cout << "=== list ===" << std::endl;
 	{
 		std::list<int> mstack;
 		mstack.push_back(5);
