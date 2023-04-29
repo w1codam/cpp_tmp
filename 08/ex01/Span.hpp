@@ -15,6 +15,7 @@ public:
 	
 	Span& operator = (const Span& c);
 
+	void	fillSpan(int range);
 	void	addNumber(int n);
 	int		shortestSpan() const;
 	int		longestSpan() const;

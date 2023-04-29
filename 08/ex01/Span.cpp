@@ -20,6 +20,12 @@ Span& Span::operator = (const Span& c)
 	return (*this);
 }
 
+void Span::fillSpan(int range)
+{
+	for (int i = 0; i < range; i++)
+		addNumber(std::rand() % 1000000);
+}
+
 void Span::addNumber(int n)
 {
 	if (this->_vec.size() < _max)
