@@ -29,8 +29,7 @@ Array<T>::Array(const Array& c)
 template<typename T>
 Array<T>::~Array()
 {
-	if (this->_array)
-		delete[] this->_array;
+	delete[] this->_array;
 }
 
 template<typename T>
